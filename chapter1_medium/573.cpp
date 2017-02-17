@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int max(int a, int b)
+float max(float a, float b)
 {
     return a > b ? a : b;
 }
@@ -13,8 +13,9 @@ int main()
     float h, u, f;
     
     while (scanf("%d %d %d %d", &H, &U, &D, &F) != EOF && H) {
-        d = 0, h = 0, u = U;
+        d = 0, h = 0;
         f = U * F / 100.;
+        u = U + f;
         
         do {
             d++;
