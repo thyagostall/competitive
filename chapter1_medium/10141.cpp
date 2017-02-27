@@ -12,7 +12,8 @@ int main()
     c = 0;
     while (cin >> n >> p && n > 0 && p > 0) {
         //cout << n << " " << p << endl;
-        getline(cin, req);
+        //getline(cin, req);
+        cin.ignore();
         for (i = 0; i < n; i++) {
             getline(cin, req);
         //    cout << req << endl;
@@ -24,7 +25,8 @@ int main()
             //cout << prop << endl;
             cin >> d >> r;
             //cout << d << " " << r << endl;
-            getline(cin, req);
+            //getline(cin, req);
+            cin.ignore();
             for (i = 0; i < r; i++) {
                 getline(cin, req);
          //       cout << req << endl;
