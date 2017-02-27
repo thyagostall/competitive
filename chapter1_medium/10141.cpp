@@ -11,25 +11,18 @@ int main()
 
     c = 0;
     while (cin >> n >> p && n > 0 && p > 0) {
-        //cout << n << " " << p << endl;
-        //getline(cin, req);
         cin.ignore();
         for (i = 0; i < n; i++) {
             getline(cin, req);
-        //    cout << req << endl;
         }
 
         rmax = 0, dmin = numeric_limits<float>::max();
         while (p--) {
             getline(cin, prop);
-            //cout << prop << endl;
             cin >> d >> r;
-            //cout << d << " " << r << endl;
-            //getline(cin, req);
             cin.ignore();
             for (i = 0; i < r; i++) {
                 getline(cin, req);
-         //       cout << req << endl;
             }
 
             if (r > rmax || r == rmax && d < dmin) {
@@ -37,9 +30,10 @@ int main()
                 rmax = r, dmin = d;
             }
         }
-       
+      
+        if (c) cout << endl;
         cout << "RFP #" << ++c << endl;
-        cout << selected << endl << endl;
+        cout << selected << endl;
     }
     return 0;
 }
