@@ -24,7 +24,7 @@
 |:------:|-----------------------|:----------:|----------|:----------:|
 | 00573  | The Snail             | 2017/02/16 | Accepted | 2017/02/16 |
 | 10141  | Request for Proposal  | 2017/02/27 | Accepted | 2017/02/27 |
-| 11507  | Bender B. Rodriguez   | 2017/02/27 | Working  |            |
+| 11507  | Bender B. Rodriguez   | 2017/02/27 | Accepted | 2017/02/28 |
 
 ### Game (Card)
 
