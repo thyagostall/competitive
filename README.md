@@ -38,7 +38,7 @@
 
 | Number | Name                  | Created    | Status   | Changed    |
 |:------:|-----------------------|:----------:|----------|:----------:|
-| 00278  | Chess                 |            | Pending  |            |            
+| 00278  | Chess                 | 2017/02/28 | Accepted | 2017/02/28 |            
 | 00696  | How Many Knights      |            | Pending  |            |
 | 10284  | Chessboard in FEN     |            | Pending  |            |
 
