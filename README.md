@@ -40,7 +40,7 @@
 |:------:|-----------------------|:----------:|----------|:----------:|
 | 00278  | Chess                 | 2017/02/28 | Accepted | 2017/02/28 |            
 | 00696  | How Many Knights      | 2017/02/28 | Accepted | 2017/02/28 |
-| 10284  | Chessboard in FEN     |            | Pending  |            |
+| 10284  | Chessboard in FEN     | 2017/02/28 | Working  | 2017/02/28 |
 
 ### Game (Others), Easier
 
