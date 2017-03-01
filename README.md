@@ -39,7 +39,7 @@
 | Number | Name                  | Created    | Status   | Changed    |
 |:------:|-----------------------|:----------:|----------|:----------:|
 | 00278  | Chess                 | 2017/02/28 | Accepted | 2017/02/28 |            
-| 00696  | How Many Knights      |            | Pending  |            |
+| 00696  | How Many Knights      | 2017/02/28 | Accepted | 2017/02/28 |
 | 10284  | Chessboard in FEN     |            | Pending  |            |
 
 ### Game (Others), Easier
