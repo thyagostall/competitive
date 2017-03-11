@@ -46,7 +46,7 @@
 
 | Number | Name                  | Created    | Status   | Changed    |
 |:------:|-----------------------|:----------:|----------|:----------:|
-| 00489  | Handman Judge         |            | Pending  |            |
+| 00489  | Handman Judge         | 2017/03/10 | Accepted | 2017/03/11 |
 | 10189  | Minesweeper           |            | Pending  |            |
 | 11459  | Snakes and Ladders    |            | Pending  |            |
 
