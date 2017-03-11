@@ -177,10 +177,34 @@
 | 11136  | Hoax or what          |            | Pending  |            |
 | 11849  | CD                    |            | Pending  |            |
 
-### C++ STL priority_queue (Java PiorityQueue)
+### C++ STL `priority_queue` (Java PiorityQueue)
 
 | Number | Name                  | Created    | Status   | Changed    |
 |:------:|-----------------------|:----------:|----------|:----------:|
 | 01203  | Argus                 |            | Pending  |            |
 | 10954  | Add All               |            | Pending  |            |
 | 11995  | I Can Guess…          |            | Pending  |            |
+
+### Graph Data Structures Problems
+
+| Number | Name                      | Created    | Status   | Changed    |
+|:------:|---------------------------|:----------:|----------|:----------:|
+| 00599  | The Forrest for the Trees |            | Pending  |            |
+| 10895  | Matrix Transpose          |            | Pending  |            |
+| 11991  | Easy Problem from…        |            | Pending  |            |
+
+### Union-Find Disjoint Sets
+
+| Number | Name                | Created    | Status   | Changed    |
+|:------:|---------------------|:----------:|----------|:----------:|
+| 00793  | Network Connections |            | Pending  |            |
+| 10507  | Waking up brain     |            | Pending  |            |
+| 11503  | Virtual Friends     |            | Pending  |            |
+
+### Tree-related Data Structures
+
+| Number | Name             | Created    | Status   | Changed    |
+|:------:|------------------|:----------:|----------|:----------:|
+| 11235  | Frequent Values  |            | Pending  |            |
+| 11402  | Ahoy, Pirates    |            | Pending  |            |
+| 12532  | Interval Product |            | Pending  |            |
