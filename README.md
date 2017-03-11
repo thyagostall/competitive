@@ -48,7 +48,7 @@
 |:------:|-----------------------|:----------:|----------|:----------:|
 | 00489  | Handman Judge         | 2017/03/10 | Accepted | 2017/03/11 |
 | 10189  | Minesweeper           | 2017/03/11 | Accepted | 2017/03/11 |
-| 11459  | Snakes and Ladders    | 2017/03/11 | Working  | 2017/03/11 |
+| 11459  | Snakes and Ladders    | 2017/03/11 | Accepted | 2017/03/11 |
 
 ### Game (Others), Harder (more tedious)
 

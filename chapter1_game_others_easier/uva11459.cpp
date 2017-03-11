@@ -6,6 +6,7 @@ int main()
     int current_player;
     int board[110];
     int players[1000005];
+    bool win;
 
     scanf("%d", &t);
     while (t--) {
@@ -23,9 +24,12 @@ int main()
             board[i] = o;
         }
 
+        win = false;
         current_player = 1;
         while (c--) {
             scanf("%d", &d);
+            if (win) continue;
+            
             s = players[current_player];
             if (s < 100) {
                 s += d;
@@ -33,9 +37,10 @@ int main()
 
                 if (board[s])
                     s = board[s];
+                players[current_player] = s;
             }
+            win = s == 100;
 
-            players[current_player] = s;
             current_player++;
             if (current_player > a) current_player = 1;
         }
