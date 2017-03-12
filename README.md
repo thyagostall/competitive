@@ -54,7 +54,7 @@
 
 | Number | Name                  | Created    | Status   | Changed    |
 |:------:|-----------------------|:----------:|----------|:----------:|
-| 00584  | Bowling               |            | Pending  |            |
+| 00584  | Bowling               | 2017/03/11 | Accepted | 2017/03/12 |
 | 10443  | Rock, Scissors, Paper |            | Pending  |            |
 | 10813  | Traditional BINGO     |            | Pending  |            |
 
