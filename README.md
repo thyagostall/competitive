@@ -98,7 +98,7 @@
 | 00893  | Y3K                    |            | Pending  |            |
 | 11947  | Cancer or Scorpio      |            | Pending  |            |
 
-### 'Time Water' Problems
+### 'Time Waster' Problems
 
 | Number | Name                  | Created    | Status   | Changed    |
 |:------:|-----------------------|:----------:|----------|:----------:|
