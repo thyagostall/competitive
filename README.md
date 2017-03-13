@@ -62,7 +62,7 @@
 
 | Number | Name                    | Created    | Status   | Changed    |
 |:------:|-------------------------|:----------:|----------|:----------:|
-| 00401  | Palindromes             |            | Pending  |            |
+| 00401  | Palindromes             | 2017/03/13 | Accepted | 2017/03/13 |
 | 10945  | Mother Bear             |            | Pending  |            |
 | 11221  | Magic Square Palindrome |            | Pending  |            |
 
