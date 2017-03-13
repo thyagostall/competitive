@@ -9,7 +9,9 @@ void mark_number(int n)
     int i, j;
     for (i = 0; i < 5; i++) {
         for (j = 0; j < 5; j++) {
-            if (card[i][j] == n) card[i][j] = MARK;
+            if (card[i][j] == n) {
+                card[i][j] = MARK;
+            }
         }
     }
 }
@@ -67,11 +69,11 @@ int main()
             }
         }
 
-        n = 0;
-        while (n++ < 75) {
+        n = 1;
+        for (i = 0; i < 75; i++) {
             scanf("%d", &c);
             mark_number(c);
-            if (check_bingo()) break;
+            if (!check_bingo()) n++;
         }
 
         printf("BINGO after %d numbers announced\n", n);
