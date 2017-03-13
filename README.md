@@ -56,7 +56,7 @@
 |:------:|-----------------------|:----------:|----------|:----------:|
 | 00584  | Bowling               | 2017/03/11 | Accepted | 2017/03/12 |
 | 10443  | Rock, Scissors, Paper | 2017/03/12 | Accepted | 2017/03/12 |
-| 10813  | Traditional BINGO     |            | Pending  |            |
+| 10813  | Traditional BINGO     | 2017/03/12 | Working  | 2017/03/12 |
 
 ### Palindrome
 
