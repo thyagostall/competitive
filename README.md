@@ -64,7 +64,7 @@
 |:------:|-------------------------|:----------:|----------|:----------:|
 | 00401  | Palindromes             | 2017/03/13 | Accepted | 2017/03/13 |
 | 10945  | Mother Bear             | 2017/03/13 | Accepted | 2017/03/13 |
-| 11221  | Magic Square Palindrome |            | Pending  |            |
+| 11221  | Magic Square Palindrome | 2017/03/13 | Accepted | 2017/03/15 |
 
 ### Anagram
 
