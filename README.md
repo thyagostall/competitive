@@ -70,7 +70,7 @@
 
 | Number | Name                  | Created    | Status   | Changed    |
 |:------:|-----------------------|:----------:|----------|:----------:|
-| 00156  | Ananagram             |            | Pending  |            |
+| 00156  | Ananagram             | 2017/03/15 | Accepted | 2017/03/15 |
 | 00195  | Anagram               |            | Pending  |            |
 | 00454  | Anagrams              |            | Pending  |            |
 
