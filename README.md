@@ -71,7 +71,7 @@
 | Number | Name                  | Created    | Status   | Changed    |
 |:------:|-----------------------|:----------:|----------|:----------:|
 | 00156  | Ananagram             | 2017/03/15 | Accepted | 2017/03/15 |
-| 00195  | Anagram               | 2017/03/15 | Working  | 2017/03/15 |
+| 00195  | Anagram               | 2017/03/15 | Accepted | 2017/03/16 |
 | 00454  | Anagrams              |            | Pending  |            |
 
 ### Interesting Real Life Problems, Easier
