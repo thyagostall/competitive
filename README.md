@@ -80,7 +80,7 @@
 |:------:|------------------------|:----------:|----------|:----------:|
 | 00161  | Traffic Lights         | 2017/03/17 | Accepted | 2017/03/17 |
 | 00637  | Booklet Printing       | 2017/03/19 | Accepted | 2017/03/19 |
-| 10812  | Beat the Spread        |            | Pending  |            |
+| 10812  | Beat the Spread        | 2017/03/19 | Accepted | 2017/03/19 |
 
 ### Interesting Real Life Problems, Harder (more tedious)
 
