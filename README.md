@@ -94,7 +94,7 @@
 
 | Number | Name                   | Created    | Status   | Changed    |
 |:------:|------------------------|:----------:|----------|:----------:|
-| 00579  | Clock Hands            |            | Pending  |            |
+| 00579  | Clock Hands            | 2017/03/19 | Accepted | 2017/03/19 |
 | 00893  | Y3K                    |            | Pending  |            |
 | 11947  | Cancer or Scorpio      |            | Pending  |            |
 
