@@ -87,7 +87,7 @@
 | Number | Name                     | Created    | Status   | Changed    |
 |:------:|--------------------------|:----------:|----------|:----------:|
 | 00403  | Postscript               |            | Pending  |            |
-| 00608  | Counterfeit Dollar       |            | Pending  |            |
+| 00608  | Counterfeit Dollar       | 2017/03/19 | Working  | 2017/03/19 |
 | 01061  | Consanguine Calculations |            | Pending  |            |
 
 ### Time
