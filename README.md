@@ -86,7 +86,7 @@
 
 | Number | Name                     | Created    | Status   | Changed    |
 |:------:|--------------------------|:----------:|----------|:----------:|
-| 00403  | Postscript               |            | Pending  |            |
+| 00403  | Postscript               | 2017/03/20 | Accepted | 2017/03/21 |
 | 00608  | Counterfeit Dollar       | 2017/03/19 | Working  | 2017/03/19 |
 | 01061  | Consanguine Calculations |            | Pending  |            |
 
