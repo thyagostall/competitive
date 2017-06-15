@@ -95,7 +95,7 @@
 | Number | Name                   | Created    | Status   | Changed    |
 |:------:|------------------------|:----------:|----------|:----------:|
 | 00579  | Clock Hands            | 2017/03/19 | Accepted | 2017/03/19 |
-| 00893  | Y3K                    |            | Pending  |            |
+| 00893  | Y3K                    | 2017/06/15 | Accepted | 2017/06/15 |
 | 11947  | Cancer or Scorpio      |            | Pending  |            |
 
 ### 'Time Waster' Problems
