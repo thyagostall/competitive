@@ -96,7 +96,7 @@
 |:------:|------------------------|:----------:|----------|:----------:|
 | 00579  | Clock Hands            | 2017/03/19 | Accepted | 2017/03/19 |
 | 00893  | Y3K                    | 2017/06/15 | Accepted | 2017/06/15 |
-| 11947  | Cancer or Scorpio      |            | Pending  |            |
+| 11947  | Cancer or Scorpio      | 2017/06/16 | Accepted | 2017/06/16 |
 
 ### 'Time Waster' Problems
 
