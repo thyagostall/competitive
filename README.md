@@ -112,7 +112,7 @@
 
 | Number | Name                   | Created    | Status   | Changed    |
 |:------:|------------------------|:----------:|----------|:----------:|
-| 10038  | Jolly Jumpers          |            | Pending  |            |
+| 10038  | Jolly Jumpers          | 2017/06/17 | Accepted | 2017/06/17 |
 | 11340  | Newspaper              |            | Pending  |            |
 | 12356  | Army Buddies           |            | Pending  |            |
 
