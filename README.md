@@ -128,7 +128,7 @@
 
 | Number | Name                   | Created    | Status   | Changed    |
 |:------:|------------------------|:----------:|----------|:----------:|
-| 00146  | ID Codes               |            | Pending  |            |
+| 00146  | ID Codes               | 2017/06/18 | Accepted | 2017/06/18 |
 | 10107  | What is the Median?    |            | Pending  |            |
 | 10258  | Contest Scoreboard     |            | Pending  |            |
 
