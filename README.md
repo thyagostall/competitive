@@ -114,7 +114,7 @@
 |:------:|------------------------|:----------:|----------|:----------:|
 | 10038  | Jolly Jumpers          | 2017/06/17 | Accepted | 2017/06/17 |
 | 11340  | Newspaper              | 2017/06/17 | Accepted | 2017/06/17 |
-| 12356  | Army Buddies           |            | Pending  |            |
+| 12356  | Army Buddies           | 2017/06/17 | Accepted | 2017/06/17 |
 
 ### 2D Array Manipulation
 
