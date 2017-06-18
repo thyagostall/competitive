@@ -122,7 +122,7 @@
 |:------:|------------------------|:----------:|----------|:----------:|
 | 10855  | Rotated squares        | 2017/06/17 | Accepted | 2017/06/17 |
 | 10920  | Spiral Tap             | 2017/06/18 | Accepted | 2017/06/18 |
-| 11581  | Grid Successors        |            | Pending  |            |
+| 11581  | Grid Successors        | 2017/06/18 | Accepted | 2017/06/18 |
 
 ### C++ STL algorithm (Java Collections)
 
