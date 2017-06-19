@@ -136,7 +136,7 @@
 
 | Number | Name                   | Created    | Status   | Changed    |
 |:------:|------------------------|:----------:|----------|:----------:|
-| 10264  | The Most Potent Corner |            | Pending  |            |
+| 10264  | The Most Potent Corner | 2017/06/19 | Accepted | 2017/06/19 |
 | 11926  | Multitasking           |            | Pending  |            |
 | 11933  | Splitting Numbers      |            | Pending  |            |
 
