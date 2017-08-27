@@ -150,7 +150,7 @@
 
 | Number | Name                  | Created    | Status   | Changed    |
 |:------:|-----------------------|:----------:|----------|:----------:|
-| 00514  | Rails                 |            | Pending  |            |
+| 00514  | Rails                 | 2017/08/27 | Accepted | 2017/08/27 |
 | 00732  | Anagram by Stack      |            | Pending  |            |
 | 01062  | Containers            |            | Pending  |            |
 
