@@ -130,7 +130,7 @@
 |:------:|------------------------|:----------:|----------|:----------:|
 | 00146  | ID Codes               | 2017/06/18 | Accepted | 2017/06/18 |
 | 10107  | What is the Median?    | 2017/06/18 | Accepted | 2017/06/18 |
-| 10258  | Contest Scoreboard     |            | Pending  |            |
+| 10258  | Contest Scoreboard     | 2017/08/27 | Accepted | 2017/08/27 |
 
 ### Bit Manipulation (both C++ STL bitset (Java BitSet) and bitmask)
 
