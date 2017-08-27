@@ -137,7 +137,7 @@
 | Number | Name                   | Created    | Status   | Changed    |
 |:------:|------------------------|:----------:|----------|:----------:|
 | 10264  | The Most Potent Corner | 2017/06/19 | Accepted | 2017/06/19 |
-| 11926  | Multitasking           |            | Pending  |            |
+| 11926  | Multitasking           | 2017/08/27 | Accepted | 2017/08/27 |
 | 11933  | Splitting Numbers      |            | Pending  |            |
 
 ### C++ STL list (Java LinkedList)
