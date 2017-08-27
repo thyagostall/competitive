@@ -144,7 +144,7 @@
 
 | Number | Name                  | Created    | Status   | Changed    |
 |:------:|-----------------------|:----------:|----------|:----------:|
-| 11988  | Broken Keyboard       |            | Pending  |            |
+| 11988  | Broken Keyboard       | 2017/08/27 | Accepted | 2017/08/27 |
 
 ### C++ STL stack (Java Stack)
 
