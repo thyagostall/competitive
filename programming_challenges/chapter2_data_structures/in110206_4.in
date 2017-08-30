@@ -1,0 +1,60 @@
+6
+4 3
+Smith, M.N., Martin, G., Erdos, P.: Newtonian forms of prime factors
+Erdos, P., Reisig, W.: Stuttering in petri nets
+Smith, M.N., Chen, X.: First order derivatives
+Jablonski, T., Hsueh, Z.: Selfstabilizing data structures
+Smitty, Q.
+Hsueh, Z.
+Chen, X.
+4 3
+Smith, M.N., Martin, G., Erdos, P.: Newtonian forms of prime factors
+Erdos, P., Reisig, W.: Stuttering in petri nets
+Smith, M.N., Chen, X.: First order derivatives
+Jablonski, T., Hsueh, Z.: Selfstabilizing data structures
+Smith, M.N.
+Hsueh, Z.
+Erdos, P.
+8 8
+4, 5.6., n, m.o., X, Y.Z.: ---
+A, B.C., Erdos, P.: ---
+A, B.C., a, b.c.: ---
+X, Y.Z., x, y.z.: ---
+1, 2.3., 4, 5.6.: ---
+a, b.c., X, Y.Z.: ---
+N, M.O., n, m.o.: ---
+1, 2.3., Erdos, P.: ---
+1, 2.3.
+4, 5.6.
+a, b.c.
+A, B.C.
+n, m.o.
+N, M.O.
+x, y.z.
+X, Y.Z.
+7 8
+4, 5.6., n, m.o., X, Y.Z.: ---
+A, B.C., a, b.c.: ---
+X, Y.Z., x, y.z.: ---
+1, 2.3., 4, 5.6.: ---
+a, b.c., X, Y.Z.: ---
+N, M.O., n, m.o.: ---
+1, 2.3., Erdos, P.: ---
+1, 2.3.
+4, 5.6.
+a, b.c.
+A, B.C.
+n, m.o.
+N, M.O.
+x, y.z.
+X, Y.Z.
+1 2
+Smith, M.N.: ---
+Erdos, P.
+Smith, M.N.
+2 3
+Aaron, Voelker., C, Plus Plus.: ---
+C, Plus Plus., Aaron, Voelker.: ---
+C, Plus Plus.
+Aaron, Voelker.
+Smith, M.N.

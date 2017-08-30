@@ -1,0 +1,148 @@
+14
+4 3
+Smith, M.N., Martin, G., Erdos, P.: Newtonian forms of prime factors
+Erdos, P., Reisig, W.: Stuttering in petri nets
+Smith, M.N., Chen, X.: First order derivates in structured programming
+Jablonski, T., Hsueh, Z.: Selfstabilizing data structures
+Smith, M.N.
+Hsueh, Z.
+Chen, X.
+
+4 3
+Smith, M.N., Martin, G., Erdos, P.: Newtonian forms of prime factors
+Erdos, P., Reisig, W.: Stuttering in petri nets
+Smith, M.N., Chen, X.: First order derivates in structured programming
+Jablonski, T., Hsueh, Z.: Selfstabilizing data structures
+Smith, M.N.
+Hsueh, Z.
+Chen, X.
+
+2 3
+C1, C., C2, C., C3, C.: BCT Paper
+C4, C., C5, C., C6, C.: BCT 2 Paper
+C4, C.
+C5, C.
+C6, C.
+
+6 3
+C1, C., C2, C., Erdos, P.: BCT Paper
+C4, C., C5, C.: BCT Paper
+C4, C., C8, C.: BCT Paper
+C8, C., C7, C.: BCT Paper
+C7, C., C6, C.: BCT Paper
+C6, C., C2, C.: BCT Paper
+C2, C.
+C4, C.
+C5, C.
+
+7 7
+C1, C., C2, C., C3, C.: BCT Paper
+C4, C., C5, C., C6, C.: BCT Paper
+C7, C., C8, C., C9, C.: BCT Paper
+C10, C., C11, C., C12, C.: BCT Paper
+C3, C., C12, C., C6, C.: BCT Paper
+C1, C., C5, C., C6, C.: BCT Paper
+C12, C., Erdos, P.: BCT Paper
+Erdos, P.
+C12, C.
+C6, C.
+C3, C.
+C1, C.
+C2, C.
+C8, C.
+
+4 3
+C1, C., C2, C., C3, C.: BCT Paper
+C3, C., C4, C., C5, C.: BCT Paper
+C4, C., Erdos, P.: BCT Paper
+C1, C., Erdos, P.: BCT Paper
+C2, C.
+C3, C.
+C4, C.
+
+4 1
+C1, C., C2, C., C3, C.: BCT Paper
+C3, C., C4, C., C5, C.: BCT Paper
+C4, C., Erdos, P.: BCT Paper
+C1, C., Erdos, P.: BCT Paper
+BCT
+
+8 14
+C1, C., C2, C., C3, C.: BCT Paper
+C4, C., C5, C., C6, C.: BCT Paper
+C7, C., C8, C., C9, C.: BCT Paper
+C10, C., C11, C., C12, C.: BCT Paper
+C12, C., C9, C.: BCT Paper
+C9, C., C6, C.: BCT Paper
+C6, C., C3, C.: BCT Paper
+C3, C., Erdos, P.: BCT Paper
+   C1, C.
+C2, C.
+C3, C.
+C4, C.
+C5, C.
+C6, C.
+C7, C.
+C8, C.
+C9, C.
+C10, C.
+C11, C.
+C12, C.
+C13, C.
+Erdos, P.
+
+7 3
+Erdos, P.: BCT Paper
+C1, C., C2, C.: BCT Paper
+C2, C., C3, C.: BCT Paper
+C3, C., Erdos, P.: BCT Paper
+C4, C., Erdos, P.: BCT Paper
+C4, C., C3, C., C5, C.: BCT Paper
+C2, C., C5, C.: BCT Paper
+C3, C.
+C2, C.
+C1, C.
+
+7 0
+Erdos, P.: BCT Paper
+C1, C., C2, C.: BCT Paper
+C2, C., C3, C.: BCT Paper
+C3, C., Erdos, P.: BCT Paper
+C4, C., Erdos, P.: BCT Paper
+C4, C., C3, C., C5, C.: BCT Paper
+C2, C., C5, C.: BCT Paper
+
+4 6
+Smith, M.N., Martin, G., Erdos, P.: Newtonian forms of prime factor matrices
+Erdos, P., Reisig, W.: Stuttering in petri nets
+Smith, M.N., Chen, X.: First oder derivates in structured programming
+Jablonski, T., Hsueh, Z.: Selfstabilizing data structures
+Smith, M.N.
+Hsueh, Z.
+  Chen, X.
+Erdos, P.
+Erdos,  P.
+Reisig, W.
+ 
+1 2
+Smith, M.N. , Erdos, P.: Newtonian forms of prime factor matrices
+Smith, M.N.
+Smith, M.N.  
+
+2 2
+Smith, M. N., Erdos, P.: Newtonian forms of prime factor matrices
+Smith, M. N., Chen, X., Johnson: Introduction to Algorithms
+Chen, X.
+Johnson
+
+7 3
+Erdos, P.: BCT Paper
+C1, C.,C2, C.: BCT Paper
+C2, C.,C3, C.: BCT Paper
+C3, C.,Erdos, P.: BCT Paper
+C4, C.,Erdos, P.: BCT Paper
+C4, C.,C3, C.,C5, C.: BCT Paper
+C2, C.,C5, C.: BCT Paper
+C3, C.
+C2, C.
+C1, C.
