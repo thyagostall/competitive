@@ -158,7 +158,7 @@
 
 | Number | Name                  | Created    | Status   | Changed    |
 |:------:|-----------------------|:----------:|----------|:----------:|
-| 10172  | The lonesome Card…    |            | Pending  |            |
+| 10172  | The lonesome Card…    | 2017/09/06 | Accepted | 2017/09/07 |
 | 10901  | Ferry Loading III     |            | Pending  |            |
 | 11034  | Ferry Loading IV      |            | Pending  |            |
 
