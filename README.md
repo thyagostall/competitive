@@ -167,8 +167,9 @@
 | Number | Name                  | Created    | Status   | Changed    |
 |:------:|-----------------------|:----------:|----------|:----------:|
 | 10226  | Hardwood Species      | 2017/09/08 | Accepted | 2017/09/08 |
-| 11286  | Conformity            |            | Pending  |            |
+| 11286  | Conformity            | 2017/09/08 | Accepted | 2017/09/08 |
 | 11572  | Unique Snowflakes     |            | Pending  |            |
+
 ### C++ STR set (and Java TreeSet)
 
 | Number | Name                  | Created    | Status   | Changed    |
