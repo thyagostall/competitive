@@ -160,7 +160,7 @@
 |:------:|-----------------------|:----------:|----------|:----------:|
 | 10172  | The lonesome Card…    | 2017/09/06 | Accepted | 2017/09/07 |
 | 10901  | Ferry Loading III     | 2017/09/07 | Accepted | 2017/09/08 |
-| 11034  | Ferry Loading IV      |            | Pending  |            |
+| 11034  | Ferry Loading IV      | 2017/09/08 | Accepted | 2017/09/08 |
 
 ### C++ STL map (and Java TreeMap)
 
