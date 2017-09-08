@@ -174,7 +174,7 @@
 
 | Number | Name                  | Created    | Status   | Changed    |
 |:------:|-----------------------|:----------:|----------|:----------:|
-| 00978  | Lemming Battle        |            | Pending  |            |
+| 00978  | Lemming Battle        | 2017/09/08 | Accepted | 2017/09/08 |
 | 11136  | Hoax or what          |            | Pending  |            |
 | 11849  | CD                    |            | Pending  |            |
 
