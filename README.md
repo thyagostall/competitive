@@ -182,7 +182,7 @@
 
 | Number | Name                  | Created    | Status   | Changed    |
 |:------:|-----------------------|:----------:|----------|:----------:|
-| 01203  | Argus                 |            | Pending  |            |
+| 01203  | Argus                 | 2017/09/08 | Accepted | 2017/09/08 |
 | 10954  | Add All               |            | Pending  |            |
 | 11995  | I Can Guess…          |            | Pending  |            |
 
