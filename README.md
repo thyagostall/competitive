@@ -184,7 +184,7 @@
 |:------:|-----------------------|:----------:|----------|:----------:|
 | 01203  | Argus                 | 2017/09/08 | Accepted | 2017/09/08 |
 | 10954  | Add All               | 2017/09/08 | Accepted | 2017/09/08 |
-| 11995  | I Can Guess…          |            | Pending  |            |
+| 11995  | I Can Guess…          | 2017/09/08 | Accepted | 2017/09/08 |
 
 ### Graph Data Structures Problems
 
