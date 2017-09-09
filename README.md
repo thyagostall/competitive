@@ -176,7 +176,7 @@
 |:------:|-----------------------|:----------:|----------|:----------:|
 | 00978  | Lemming Battle        | 2017/09/08 | Accepted | 2017/09/08 |
 | 11136  | Hoax or what          | 2017/09/08 | Accepted | 2017/09/08 |
-| 11849  | CD                    |            | Pending  |            |
+| 11849  | CD                    | 2017/09/08 | Accepted | 2017/09/08 |
 
 ### C++ STL `priority_queue` (Java PiorityQueue)
 
