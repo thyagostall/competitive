@@ -200,7 +200,7 @@
 |:------:|---------------------|:----------:|----------|:----------:|
 | 00793  | Network Connections | 2017/09/09 | Accepted | 2017/09/09 |
 | 10507  | Waking up brain     | 2017/09/09 | Accepted | 2017/09/09 |
-| 11503  | Virtual Friends     |            | Pending  |            |
+| 11503  | Virtual Friends     | 2017/09/09 | Accepted | 2017/09/09 |
 
 ### Tree-related Data Structures
 
