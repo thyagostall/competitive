@@ -198,7 +198,7 @@
 
 | Number | Name                | Created    | Status   | Changed    |
 |:------:|---------------------|:----------:|----------|:----------:|
-| 00793  | Network Connections |            | Pending  |            |
+| 00793  | Network Connections | 2017/09/09 | Accepted | 2017/09/09 |
 | 10507  | Waking up brain     |            | Pending  |            |
 | 11503  | Virtual Friends     |            | Pending  |            |
 
