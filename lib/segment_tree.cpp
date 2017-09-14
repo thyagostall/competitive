@@ -70,19 +70,70 @@ public:
 
 using namespace std;
 
-void test_with_simple_example()
+SegmentTree provide_tree()
 {
     int arr[] = {18, 17, 13, 19, 15, 11, 20};
     vector<int> input(arr, arr + 7);
+    return SegmentTree(input);
+}
 
-    SegmentTree t(input);
-    cout << "query(1, 3)=" << t.query(1, 3) << endl;
-    cout << "query(4, 6)=" << t.query(4, 6) << endl;
+void test_input_root()
+{
+    SegmentTree t = provide_tree();
+    if (t.query(0, 6) == 5) {
+        cout << "✔ Test - Passed" << endl;
+    } else {
+        cout << "✗ Test - Failed" << endl;
+    }
+}
+
+void test_input_left_branch()
+{
+    SegmentTree t = provide_tree();
+    if (t.query(0, 3) == 2) {
+        cout << "✔ Test - Passed" << endl;
+    } else {
+        cout << "✗ Test - Failed" << endl;
+    }
+}
+
+void test_input_right_branch()
+{
+    SegmentTree t = provide_tree();
+    if (t.query(4, 6) == 5) {
+        cout << "✔ Test - Passed" << endl;
+    } else {
+        cout << "✗ Test - Failed" << endl;
+    }
+}
+
+void test_input_intersection()
+{
+    SegmentTree t = provide_tree();
+    if (t.query(3, 4) == 4) {
+        cout << "✔ Test - Passed" << endl;
+    } else {
+        cout << "✗ Test - Failed" << endl;
+    }
+}
+
+void test_input_only_one_index()
+{
+    SegmentTree t = provide_tree();
+    if (t.query(4, 4) == 4) {
+        cout << "✔ Test - Passed" << endl;
+    } else {
+        cout << "✗ Test - Failed" << endl;
+    }
 }
 
 int main()
 {
-    test_with_simple_example();
+    test_input_root();
+    test_input_left_branch();
+    test_input_right_branch();
+    test_input_intersection();
+    test_input_only_one_index();
 }
 
 #endif
