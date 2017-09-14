@@ -2,6 +2,7 @@
 
 class SegmentTree {
 private:
+    static const int OUT_OF_BOUNDS = -1;
     std::vector<int> tree, input;
     int size;
 
@@ -18,6 +19,14 @@ private:
     bool compare(int a, int b) 
     {
         return a <= b;
+    }
+
+    int compute(int i, int j)
+    {
+        if (i == OUT_OF_BOUNDS) return j;
+        if (j == OUT_OF_BOUNDS) return i;
+
+        return compare(input[i], input[j]) ? i : j;
     }
 
     void build(int p, int l, int r) 
@@ -37,16 +46,13 @@ private:
 
     int query(int p, int l, int r, int i, int j)
     {
-        if (i > r || j < l) return -1;
+        if (i > r || j < l) return OUT_OF_BOUNDS;
         if (l >= i && r <= j) return tree[p];
 
         int p1 = query(left(p), l, (l + r) / 2, i, j);
         int p2 = query(right(p), (l + r) / 2 + 1, r, i, j);
 
-        if (p1 == -1) return p2;
-        if (p2 == -1) return p1;
-
-        return compare(input[p1], input[p2]) ? p1 : p2;
+        return compute(p1, p2);
     }
 public:
     SegmentTree(const std::vector<int> input)
