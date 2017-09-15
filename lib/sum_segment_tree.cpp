@@ -3,7 +3,7 @@
 class SegmentTree {
 private:
     std::vector<int> tree, input;
-    int size, current;
+    int size;
 
     int left(int p) 
     {
@@ -45,7 +45,7 @@ protected:
 
     int next_leaf_value(int p, int l, int r)
     {
-        return input[current++];
+        return input[l];
     }
 
     int out_of_bounds_value()
@@ -57,7 +57,6 @@ public:
     {
         this->size = input.size();
         this->input = input;       
-        this->current = 0;
         tree.assign(4 * size, 0);
         build(1, 0, size - 1);
     }
