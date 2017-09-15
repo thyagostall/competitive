@@ -37,6 +37,17 @@ private:
 
         return compute(p1, p2);
     }
+
+    int update(int p, int l, int r, int i, int v)
+    {
+        if (i > r || i < l) return tree[p];
+        if (i == l && i == r) return tree[p] = v;
+
+        int p1 = update(left(p), l, (l + r) / 2, i, v);
+        int p2 = update(right(p), (l + r) / 2 + 1, r, i, v);
+
+        return tree[p] = compute(p1, p2);
+    }
 protected:
     int compute(int i, int j)
     {
@@ -65,6 +76,12 @@ public:
     {
         return this->query(1, 0, size - 1, i, j);
     }
+
+    void update(int i, int v)
+    {
+        this->input[i] = v;
+        this->update(1, 0, size - 1, i, v);
+    }
 };
 
 #ifndef TESTS
@@ -79,6 +96,23 @@ SegmentTree provide_tree()
     int arr[] = {18, 17, 13, 19, 15, 11, 20};
     vector<int> input(arr, arr + 7);
     return SegmentTree(input);
+}
+
+void test_update_value()
+{
+    SegmentTree t = provide_tree();
+    t.update(0, 23);
+    if (t.query(0, 6) == 118) {
+        cout << "✔ Test - Passed" << endl;
+    } else {
+        cout << "✗ Test - Failed" << endl;
+    }
+    
+    if (t.query(0, 0) == 23) {
+        cout << "✔ Test - Passed" << endl;
+    } else {
+        cout << "✗ Test - Failed" << endl;
+    }
 }
 
 void test_sum_input_root()
@@ -133,6 +167,7 @@ void test_sum_input_only_one_index()
 
 int main()
 {
+    test_update_value();
     test_sum_input_root();
     test_sum_input_left_branch();
     test_sum_input_right_branch();
