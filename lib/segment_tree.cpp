@@ -29,18 +29,15 @@ private:
         return compare(input[i], input[j]) ? i : j;
     }
 
-    void build(int p, int l, int r) 
+    int build(int p, int l, int r) 
     {
         if (l != r) {
-            build(left(p), l, (l + r) / 2);
-            build(right(p), (l + r) / 2 + 1, r);
+            int p1 = build(left(p), l, (l + r) / 2);
+            int p2 = build(right(p), (l + r) / 2 + 1, r);
 
-            int p1 = tree[left(p)];
-            int p2 = tree[right(p)];
-
-            tree[p] = compare(input[p1], input[p2]) ? p1 : p2;
+            return tree[p] = compute(p1, p2);
         } else {
-            tree[p] = l;
+            return tree[p] = l;
         }
     }
 
@@ -54,11 +51,22 @@ private:
 
         return compute(p1, p2);
     }
+
+    int update(int p, int l, int r, int i, int v)
+    {
+        if (i > r || i < l) return tree[p];
+        if (i == l && i == r) return tree[p] = l;
+
+        int p1 = update(left(p), l, (l + r) / 2, i, v);
+        int p2 = update(right(p), (l + r) / 2 + 1, r, i, v);
+
+        return tree[p] = compute(p1, p2);
+    }
 public:
     SegmentTree(const std::vector<int> input)
     {
         size = input.size();
-        this->input = input;       
+        this->input = input;
         tree.assign(4 * size, 0);
         build(1, 0, size - 1);
     }
@@ -66,6 +74,12 @@ public:
     int query(int i, int j)
     {
         return this->query(1, 0, size - 1, i, j);
+    }
+
+    int update(int i, int v)
+    {
+        this->input[i] = v;
+        this->update(1, 0, size - 1, i, v);
     }
 };
 
@@ -81,6 +95,17 @@ SegmentTree provide_tree()
     int arr[] = {18, 17, 13, 19, 15, 11, 20};
     vector<int> input(arr, arr + 7);
     return SegmentTree(input);
+}
+
+void test_update_min()
+{
+    SegmentTree t = provide_tree();
+    t.update(6, 0);
+    if (t.query(0, 6) == 6) {
+        cout << "✔ Test - Passed" << endl;
+    } else {
+        cout << "✗ Test - Failed" << endl;
+    }
 }
 
 void test_input_root()
@@ -135,6 +160,7 @@ void test_input_only_one_index()
 
 int main()
 {
+    test_update_min();
     test_input_root();
     test_input_left_branch();
     test_input_right_branch();
