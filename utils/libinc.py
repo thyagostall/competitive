@@ -10,6 +10,8 @@ if __name__ == '__main__':
     import sys
 
     library_name = sys.argv[2]
+    if library_name[-4:] == '.cpp':
+        raise Exception('You should not include the .cpp extension at the end of the library name')
     library_path = os.path.expanduser('~/dev/competitive/lib/')
     input_file = sys.argv[1]
 
