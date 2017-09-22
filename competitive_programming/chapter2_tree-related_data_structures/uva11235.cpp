@@ -19,71 +19,34 @@ private:
         return (p << 1) + 1;
     }
 
-    int start(int n)
-    {
-        return startpos[n];
-    }
-
-    int end(int n)
-    {
-        return startpos[n] + frequency[n] - 1;
-    }
-
-    int compute_frequency(int n, int l, int r) 
-    {
-        if (n < l || n > r) return OUT_OF_BOUNDS;
-
-        if (l <= start(n) && r >= end(n)) {
-            return frequency[n];
-        }
-
-        if (l > start(n)) {
-            int quantity_before_start = l - start(n);
-            return frequency[n] - quantity_before_start;
-        }
-
-        if (r < end(n)) {
-            int quantity_after_end = end(n) - r;
-            return frequency[n] - quantity_after_end;
-        }
-    }
-
-    bool compare(int p1, int p2, int i, int j, int l, int r) 
-    {
-        l = max(l, i);
-        r = min(r, j);
-        return compute_frequency(p1, l, r) >= compute_frequency(p2, l, r);
-    }
-
-    int compute(int p1, int p2, int i, int j, int l, int r)
-    {
-        if (p1 == OUT_OF_BOUNDS) return p2;
-        if (p2 == OUT_OF_BOUNDS) return p1;
-
-        return compare(p1, p2, i, j, l, r) ? p1 : p2;
-    }
-
     int build(int p, int l, int r) 
     {
         if (l != r) {
             int p1 = build(left(p), l, (l + r) / 2);
             int p2 = build(right(p), (l + r) / 2 + 1, r);
 
-            return tree[p] = compute(p1, p2, l, r, l, r);
+            return tree[p] = max(tree[left(p)], tree[right(p)]);
         } else {
-            return tree[p] = l;
+            return tree[p] = frequency[l];
         }
     }
 
     int query(int p, int l, int r, int i, int j)
     {
-        if (i > r || j < l) return OUT_OF_BOUNDS;
-        if (l >= i && r <= j) return tree[p];
+        if (i > r || j < l) {
+            return OUT_OF_BOUNDS;
+        }
+        if (l >= i && r <= j) {
+            return tree[p];
+        }
 
         int p1 = query(left(p), l, (l + r) / 2, i, j);
         int p2 = query(right(p), (l + r) / 2 + 1, r, i, j);
 
-        return compute(p1, p2, i, j, l, r);
+        if (p1 == OUT_OF_BOUNDS) return p2;
+        if (p2 == OUT_OF_BOUNDS) return p1;
+
+        return max(p1, p2);
     }
 public:
     SegmentTree(const std::vector<int> &input, const std::vector<int> &startpos, const std::vector<int> &frequency)
@@ -94,7 +57,6 @@ public:
         this->frequency = frequency;
         tree.assign(4 * size, 0);
         build(1, 0, size - 1);
-
     }
 
     int query(int i, int j)
@@ -107,8 +69,18 @@ public:
         if (input[i] == input[j]) {
             return j - i + 1;
         }
-        int result = this->query(i, j);
-        return compute_frequency(result, i, j);
+
+        int result;
+        int freq_start = frequency[i] - i + startpos[i];
+        int freq_end = j - startpos[j] + 1;
+        result = max(freq_start, freq_end);
+
+        int end_i = startpos[i] + frequency[i];
+        int start_j = startpos[j] - 1;
+
+        if (end_i <= start_j) 
+            result = max(result, this->query(end_i, start_j));
+        return result;
     }
 };
 
@@ -136,7 +108,7 @@ int main()
         for (int j = last_start; j < quantity; j++) {
             frequency[j] = quantity - last_start;
         }
-        
+
         SegmentTree tree(input, start, frequency);
         while (queries--) {
             cin >> i >> j;

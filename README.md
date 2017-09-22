@@ -206,6 +206,6 @@
 
 | Number | Name             | Created    | Status   | Changed    |
 |:------:|------------------|:----------:|----------|:----------:|
-| 11235  | Frequent Values  | 2017/09/16 | Stuck    | 2017/09/16 |
+| 11235  | Frequent Values  | 2017/09/16 | Accepted | 2017/09/21 |
 | 11402  | Ahoy, Pirates    |            | Pending  |            |
 | 12532  | Interval Product |            | Pending  |            |
