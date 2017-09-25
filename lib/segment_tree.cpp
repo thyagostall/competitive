@@ -127,6 +127,85 @@ SegmentTree provide_tree()
     return SegmentTree(input);
 }
 
+void test_increment_everything()
+{
+    SegmentTree t = provide_tree();
+    t.increment(0, 6, 10);
+    if (t.query(0, 6) == 21) {
+        cout << "✔ Test - Passed" << endl;
+    } else {
+        cout << "✗ Test - Failed" << endl;
+    }
+}
+
+void test_increment_left_branch()
+{
+    SegmentTree t = provide_tree();
+    t.increment(0, 3, 10);
+    if (t.query(0, 3) == 23) {
+        cout << "✔ Test - Passed" << endl;
+    } else {
+        cout << "✗ Test - Failed" << endl;
+    }
+
+    if (t.query(0, 6) == 11) {
+        cout << "✔ Test - Passed" << endl;
+    } else {
+        cout << "✗ Test - Failed" << endl;
+    }
+}
+
+void test_increment_right_branch()
+{
+    SegmentTree t = provide_tree();
+    t.increment(4, 6, 10);
+    if (t.query(4, 6) == 21) {
+        cout << "✔ Test - Passed" << endl;
+    } else {
+        cout << "✗ Test - Failed" << endl;
+    }
+
+    if (t.query(0, 6) == 13) {
+        cout << "✔ Test - Passed" << endl;
+    } else {
+        cout << "✗ Test - Failed" << endl;
+    }
+}
+
+void test_increment_intersection()
+{
+    SegmentTree t = provide_tree();
+    t.increment(3, 4, 10);
+    if (t.query(3, 4) == 25) {
+        cout << "✔ Test - Passed" << endl;
+    } else {
+        cout << "✗ Test - Failed" << endl;
+    }
+
+    if (t.query(0, 6) == 11) {
+        cout << "✔ Test - Passed" << endl;
+    } else {
+        cout << "✗ Test - Failed" << endl;
+    }
+}
+
+void test_increment_only_one_index()
+{
+    SegmentTree t = provide_tree();
+    t.increment(4, 4, 10);
+    if (t.query(4, 4) == 25) {
+        cout << "✔ Test - Passed" << endl;
+    } else {
+        cout << "✗ Test - Failed" << endl;
+    }
+
+    if (t.query(0, 6) == 11) {
+        cout << "✔ Test - Passed" << endl;
+    } else {
+        cout << "✗ Test - Failed" << endl;
+    }
+}
+
 void test_input_root()
 {
     SegmentTree t = provide_tree();
@@ -179,6 +258,12 @@ void test_input_only_one_index()
 
 int main()
 {
+    test_increment_everything();
+    test_increment_left_branch();
+    test_increment_right_branch();
+    test_increment_intersection();
+    test_increment_only_one_index();
+
     test_input_root();
     test_input_left_branch();
     test_input_right_branch();
