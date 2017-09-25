@@ -1,85 +1,115 @@
 #include <vector>
+#include <limits>
+#include <algorithm>
 
-class SegmentTree {
-private:
-    static const int OUT_OF_BOUNDS = -1;
-    std::vector<int> tree, input;
-    int size;
-
-    int left(int p) 
-    {
-        return p << 1;
-    }
-
-    int right(int p) 
-    {
-        return (p << 1) + 1;
-    }
-
-    bool compare(int a, int b) 
-    {
-        return a <= b;
-    }
-
-    int compute(int i, int j)
-    {
-        if (i == OUT_OF_BOUNDS) return j;
-        if (j == OUT_OF_BOUNDS) return i;
-
-        return compare(input[i], input[j]) ? i : j;
-    }
-
-    int build(int p, int l, int r) 
-    {
-        if (l != r) {
-            int p1 = build(left(p), l, (l + r) / 2);
-            int p2 = build(right(p), (l + r) / 2 + 1, r);
-
-            return tree[p] = compute(p1, p2);
-        } else {
-            return tree[p] = l;
-        }
-    }
-
-    int query(int p, int l, int r, int i, int j)
-    {
-        if (i > r || j < l) return OUT_OF_BOUNDS;
-        if (l >= i && r <= j) return tree[p];
-
-        int p1 = query(left(p), l, (l + r) / 2, i, j);
-        int p2 = query(right(p), (l + r) / 2 + 1, r, i, j);
-
-        return compute(p1, p2);
-    }
-
-    int update(int p, int l, int r, int i, int v)
-    {
-        if (i > r || i < l) return tree[p];
-        if (i == l && i == r) return tree[p] = l;
-
-        int p1 = update(left(p), l, (l + r) / 2, i, v);
-        int p2 = update(right(p), (l + r) / 2 + 1, r, i, v);
-
-        return tree[p] = compute(p1, p2);
-    }
+class SegmentTree
+{
 public:
-    SegmentTree(const std::vector<int> input)
+    SegmentTree(std::vector<int> &input):
+        size(input.size())
     {
-        size = input.size();
+        this->current = 0;
         this->input = input;
-        tree.assign(4 * size, 0);
+
+        low.assign(4 * size, 0);
+        high.assign(4 * size, 0);
+        minv.assign(4 * size, 0);
+        delta.assign(4 * size, 0);
+
         build(1, 0, size - 1);
+    }
+
+    void increment(int i, int j, int val)
+    {
+        this->increment(1, i, j, val);
     }
 
     int query(int i, int j)
     {
-        return this->query(1, 0, size - 1, i, j);
+        return this->query(1, i, j);
+    }
+private:
+    std::vector<int> low, high, minv, delta, input;
+    int size, current;
+
+    int left(int p)
+    {
+        return p << 1;
     }
 
-    int update(int i, int v)
+    int right(int p)
     {
-        this->input[i] = v;
-        this->update(1, 0, size - 1, i, v);
+        return (p << 1) + 1;
+    }
+
+    int half(int l, int r)
+    {
+        return (l + r) / 2;
+    }
+
+    void prop(int p)
+    {
+        delta[left(p)] += delta[p];
+        delta[right(p)] += delta[p];
+        delta[p] = 0;
+    }
+
+    void update(int p)
+    {
+        minv[p] = std::min(minv[left(p)] + delta[left(p)], minv[right(p)] + delta[right(p)]);
+    }
+
+    void build(int p, int l, int r)
+    {
+        low[p] = l;
+        high[p] = r;
+
+        if (l == r) {
+            minv[p] = input[current++];
+            return;
+        }
+
+        int h = half(l, r);
+        build(left(p), l, h);
+        build(right(p), h + 1, r);
+
+        update(p);
+    }
+
+    void increment(int p, int i, int j, int val)
+    {
+        if (j < low[p] || i > high[p])
+            return;
+
+        if (i <= low[p] && j >= high[p]) {
+            delta[p] += val;
+            return;
+        }
+
+        prop(p);
+
+        increment(left(p), i, j, val);
+        increment(right(p), i, j, val);
+
+        update(p);
+    }
+
+    int query(int p, int i, int j)
+    {
+        if (j < low[p] || i > high[p])
+            return std::numeric_limits<int>::max();
+
+        if (i <= low[p] && j >= high[p])
+            return minv[p] + delta[p];
+
+        prop(p);
+
+        int min_left = query(left(p), i, j);
+        int min_right = query(right(p), i, j);
+
+        update(p);
+
+        return std::min(min_left, min_right);
     }
 };
 
@@ -97,21 +127,10 @@ SegmentTree provide_tree()
     return SegmentTree(input);
 }
 
-void test_update_min()
-{
-    SegmentTree t = provide_tree();
-    t.update(6, 0);
-    if (t.query(0, 6) == 6) {
-        cout << "✔ Test - Passed" << endl;
-    } else {
-        cout << "✗ Test - Failed" << endl;
-    }
-}
-
 void test_input_root()
 {
     SegmentTree t = provide_tree();
-    if (t.query(0, 6) == 5) {
+    if (t.query(0, 6) == 11) {
         cout << "✔ Test - Passed" << endl;
     } else {
         cout << "✗ Test - Failed" << endl;
@@ -121,7 +140,7 @@ void test_input_root()
 void test_input_left_branch()
 {
     SegmentTree t = provide_tree();
-    if (t.query(0, 3) == 2) {
+    if (t.query(0, 3) == 13) {
         cout << "✔ Test - Passed" << endl;
     } else {
         cout << "✗ Test - Failed" << endl;
@@ -131,7 +150,7 @@ void test_input_left_branch()
 void test_input_right_branch()
 {
     SegmentTree t = provide_tree();
-    if (t.query(4, 6) == 5) {
+    if (t.query(4, 6) == 11) {
         cout << "✔ Test - Passed" << endl;
     } else {
         cout << "✗ Test - Failed" << endl;
@@ -141,7 +160,7 @@ void test_input_right_branch()
 void test_input_intersection()
 {
     SegmentTree t = provide_tree();
-    if (t.query(3, 4) == 4) {
+    if (t.query(3, 4) == 15) {
         cout << "✔ Test - Passed" << endl;
     } else {
         cout << "✗ Test - Failed" << endl;
@@ -151,7 +170,7 @@ void test_input_intersection()
 void test_input_only_one_index()
 {
     SegmentTree t = provide_tree();
-    if (t.query(4, 4) == 4) {
+    if (t.query(4, 4) == 15) {
         cout << "✔ Test - Passed" << endl;
     } else {
         cout << "✗ Test - Failed" << endl;
@@ -160,7 +179,6 @@ void test_input_only_one_index()
 
 int main()
 {
-    test_update_min();
     test_input_root();
     test_input_left_branch();
     test_input_right_branch();
