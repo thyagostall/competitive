@@ -3,10 +3,10 @@
 
 using namespace std;
 
-class FenwickTree
+class BinaryFenwickTree
 {
 public:
-    FenwickTree(int n): size(n + 1), table(size)
+    BinaryFenwickTree(int n): size(n + 1), table(size)
     {
         table.assign(size, 0);
         values.assign(size, false);
@@ -71,13 +71,13 @@ using namespace std;
 
 void test_create_empty_tree()
 {
-    FenwickTree ft(10);
+    BinaryFenwickTree ft(10);
     cout << "✔ Test passed" << endl;
 }
 
 void test_update_first()
 {
-    FenwickTree ft(10);
+    BinaryFenwickTree ft(10);
     ft.update(1, true);
     int result = ft.range_sum(1, 1);
     if (result == 1) {
@@ -89,7 +89,7 @@ void test_update_first()
 
 void test_update_all_values()
 {
-    FenwickTree ft(10);
+    BinaryFenwickTree ft(10);
     for (int i = 1; i <= 10; i++) {
         ft.update(i, true);
     }
@@ -103,7 +103,7 @@ void test_update_all_values()
 
 void test_update_no_value()
 {
-    FenwickTree ft(10);
+    BinaryFenwickTree ft(10);
     int result = ft.range_sum(1, 10);
     if (result == 0) {
         cout << "✔ Test passed" << endl;
@@ -114,7 +114,7 @@ void test_update_no_value()
 
 void test_update_only_even()
 {
-    FenwickTree ft(10);
+    BinaryFenwickTree ft(10);
     for (int i = 1; i <= 10; i++) {
         if (i % 2) continue;
         ft.update(i, true);
@@ -129,7 +129,7 @@ void test_update_only_even()
 
 void test_update_only_odd()
 {
-    FenwickTree ft(10);
+    BinaryFenwickTree ft(10);
     for (int i = 1; i <= 10; i++) {
         if (i % 2 == 0) continue;
         ft.update(i, true);
@@ -144,7 +144,7 @@ void test_update_only_odd()
 
 void test_toggle_to_false()
 {
-    FenwickTree ft(10);
+    BinaryFenwickTree ft(10);
     ft.update(1, true);
     ft.toggle(1);
     int result = ft.range_sum(1, 10);
@@ -157,7 +157,7 @@ void test_toggle_to_false()
 
 void test_toggle_to_true()
 {
-    FenwickTree ft(10);
+    BinaryFenwickTree ft(10);
     ft.toggle(1);
     int result = ft.range_sum(1, 10);
     if (result == 1) {
@@ -169,7 +169,7 @@ void test_toggle_to_true()
 
 void test_toggle_everything_to_true()
 {
-    FenwickTree ft(10);
+    BinaryFenwickTree ft(10);
     for (int i = 1; i <= 10; i++) {
         ft.toggle(i);
     }
@@ -183,7 +183,7 @@ void test_toggle_everything_to_true()
 
 void test_toggle_everything_to_false()
 {
-    FenwickTree ft(10);
+    BinaryFenwickTree ft(10);
     for (int i = 1; i <= 10; i++) {
         ft.update(i, true);
     }
@@ -200,7 +200,7 @@ void test_toggle_everything_to_false()
 
 void test_toggle_alternate()
 {
-    FenwickTree ft(10);
+    BinaryFenwickTree ft(10);
     for (int i = 1; i <= 10; i++) {
         if (i % 2 == 0) continue;
         ft.update(i, true);
