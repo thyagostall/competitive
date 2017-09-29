@@ -14,9 +14,12 @@ public:
 
     void update(int i, bool new_value)
     {
-        if (new_value == values[i]) return;
+        if (new_value == values[i])
+            return;
 
-        int delta = values[i] ? -1 : 1;
+        values[i] = new_value;
+
+        int delta = new_value ? 1 : -1;
         while (i < size) {
             table[i] += delta;
             i += lowest_one_bit(i);
@@ -25,12 +28,13 @@ public:
 
     void toggle(int i)
     {
-        int delta = values[i] ? -1 : 1;
+        values[i] = !values[i];
+
+        int delta = values[i] ? 1 : -1;
         while (i < size) {
             table[i] += delta;
             i += lowest_one_bit(i);
         }
-        values[i] = !values[i];
     }
 
     int sum(int i)
@@ -138,23 +142,75 @@ void test_update_only_odd()
     }
 }
 
-void test_toggle()
+void test_toggle_to_false()
 {
     FenwickTree ft(10);
-    for (int i = 1; i <= 3; i++) {
-        ft.update(i, true);
-    }
+    ft.update(1, true);
+    ft.toggle(1);
     int result = ft.range_sum(1, 10);
-    if (result == 3) {
+    if (result == 0) {
         cout << "✔ Test passed" << endl;
     } else {
         cout << "✘ Test failed" << endl;
     }
-    
+}
+
+void test_toggle_to_true()
+{
+    FenwickTree ft(10);
     ft.toggle(1);
-    result = ft.range_sum(1, 10);
-    cout << result << endl;
-    if (result == 2) {
+    int result = ft.range_sum(1, 10);
+    if (result == 1) {
+        cout << "✔ Test passed" << endl;
+    } else {
+        cout << "✘ Test failed" << endl;
+    }
+}
+
+void test_toggle_everything_to_true()
+{
+    FenwickTree ft(10);
+    for (int i = 1; i <= 10; i++) {
+        ft.toggle(i);
+    }
+    int result = ft.range_sum(1, 10);
+    if (result == 10) {
+        cout << "✔ Test passed" << endl;
+    } else {
+        cout << "✘ Test failed" << endl;
+    }
+}
+
+void test_toggle_everything_to_false()
+{
+    FenwickTree ft(10);
+    for (int i = 1; i <= 10; i++) {
+        ft.update(i, true);
+    }
+    for (int i = 1; i <= 10; i++) {
+        ft.toggle(i);
+    }
+    int result = ft.range_sum(1, 10);
+    if (result == 0) {
+        cout << "✔ Test passed" << endl;
+    } else {
+        cout << "✘ Test failed" << endl;
+    }
+}
+
+void test_toggle_alternate()
+{
+    FenwickTree ft(10);
+    for (int i = 1; i <= 10; i++) {
+        if (i % 2 == 0) continue;
+        ft.update(i, true);
+    }
+    for (int i = 1; i <= 10; i++) {
+        if (i % 2 != 0) continue;
+        ft.toggle(i);
+    }
+    int result = ft.range_sum(1, 10);
+    if (result == 10) {
         cout << "✔ Test passed" << endl;
     } else {
         cout << "✘ Test failed" << endl;
@@ -163,13 +219,17 @@ void test_toggle()
 
 int main()
 {
-    test_toggle();
     test_create_empty_tree();
     test_update_first();
     test_update_all_values();
     test_update_no_value();
     test_update_only_even();
     test_update_only_odd();
+    test_toggle_to_false();
+    test_toggle_to_true();
+    test_toggle_everything_to_true();
+    test_toggle_everything_to_false();
+    test_toggle_alternate();
 }
 
 #endif
