@@ -207,5 +207,5 @@
 | Number | Name             | Created    | Status   | Changed    |
 |:------:|------------------|:----------:|----------|:----------:|
 | 11235  | Frequent Values  | 2017/09/16 | Accepted | 2017/09/21 |
-| 11402  | Ahoy, Pirates    |            | Pending  |            |
+| 11402  | Ahoy, Pirates    | 2017/09/30 | Accepted | 2017/09/30 |
 | 12532  | Interval Product | 2017/09/24 | Accetepd | 2017/09/25 |
