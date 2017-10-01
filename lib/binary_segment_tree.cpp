@@ -13,15 +13,16 @@ class BinarySegmentTree
 {
 public:
     BinarySegmentTree(std::vector<bool> &input):
-        size(input.size())
+        size(input.size()),
+        MAX_SIZE(4 * size)
     {
         this->current = 0;
         this->input = input;
 
-        low.assign(4 * size, 0);
-        high.assign(4 * size, 0);
-        sumv.assign(4 * size, 0);
-        pending.assign(4 * size, NONE);
+        low.assign(MAX_SIZE, 0);
+        high.assign(MAX_SIZE, 0);
+        sumv.assign(MAX_SIZE, 0);
+        pending.assign(MAX_SIZE, NONE);
 
         build(1, 0, size - 1);
     }
@@ -50,6 +51,8 @@ private:
     std::vector<PendingStatus> pending;
     std::vector<bool> input;
     int size, current;
+
+    const int MAX_SIZE;
     
     int left(int p)
     {
@@ -66,39 +69,40 @@ private:
         return (l + r) / 2;
     }
 
-    PendingStatus flip_status(PendingStatus old_status)
+    PendingStatus get_status(PendingStatus old_status, PendingStatus new_status)
     {
+        if (new_status == NONE)
+            return old_status;
+
+        if (new_status == SET || new_status == RESET || old_status == NONE) 
+            return new_status;
+
         switch (old_status) {
             case NONE:
                 return TOGGLE;
+            case TOGGLE:
+                return NONE;
             case SET: 
                 return RESET;
             case RESET:
                 return SET;
-            case TOGGLE:
-                return NONE;
         }
     }
 
     void prop(int p)
     {
-        if (pending[p] == NONE)
-            return;
-
-        update(p);
-
-        if (pending[p] == SET || pending[p] == RESET) {
-            pending[left(p)] = pending[right(p)] = pending[p];
-        } else {
-            pending[left(p)] = flip_status(pending[left(p)]);
-            pending[right(p)] = flip_status(pending[right(p)]);
-        }
+        if (left(p) < MAX_SIZE)
+            pending[left(p)] = get_status(pending[left(p)], pending[p]);
+        if (right(p) < MAX_SIZE)
+            pending[right(p)] = get_status(pending[right(p)], pending[p]);
         pending[p] = NONE;
     }
 
     int calculate(int p)
     {
-        switch (pending[p]) {
+        PendingStatus status = pending[p];
+        prop(p);
+        switch (status) {
             case NONE: 
                 return sumv[p];
             case SET: 
@@ -143,8 +147,7 @@ private:
             return;
 
         if (i <= low[p] && j >= high[p]) {
-            calculate(p);
-            pending[p] = status;
+            pending[p] = get_status(pending[p], status);
             return;
         }
         
