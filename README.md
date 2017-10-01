@@ -216,7 +216,7 @@
 
 | Number | Name                                     | Created    | Status   | Changed    |
 |:------:|------------------------------------------|:----------:|----------|:----------:|
-| 00927  | Integer Sequences from Addition of Terms |            |          |            |
+| 00927  | Integer Sequences from Addition of Terms | 2017/09/30 | Accepted | 2017/09/30 |
 | 01237  | Expert Enough?                           |            |          |            |
 | 10976  | Fractions Again?!                        |            |          |            |
 
