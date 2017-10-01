@@ -209,3 +209,69 @@
 | 11235  | Frequent Values  | 2017/09/16 | Accepted | 2017/09/21 |
 | 11402  | Ahoy, Pirates    | 2017/09/30 | Accepted | 2017/09/30 |
 | 12532  | Interval Product | 2017/09/24 | Accetepd | 2017/09/25 |
+
+## Chapter 3
+
+### Iterative (One Loop, Linear Scan)
+
+| Number | Name                                     | Created    | Status   | Changed    |
+|:------:|------------------------------------------|:----------:|----------|:----------:|
+| 00927  | Integer Sequences from Addition of Terms |            |          |            |
+| 01237  | Expert Enough?                           |            |          |            |
+| 10976  | Fractions Again?!                        |            |          |            |
+
+### Iterative (Two Nested Loops)
+
+| Number | Name                                     | Created    | Status   | Changed    |
+|:------:|------------------------------------------|:----------:|----------|:----------:|
+| 01260  | Sales                                    |            |          |            |
+| 10487  | Closest Sums                             |            |          |            |
+| 11242  | Tour de France                           |            |          |            |
+
+### Iterative (Three or More Nested Loops, Easier)
+
+| Number | Name                                     | Created    | Status   | Changed    |
+|:------:|------------------------------------------|:----------:|----------|:----------:|
+| 00441  | Lotto                                    |            |          |            |
+| 00735  | Dart-a-Mania                             |            |          |            |
+| 10102  | The path in the colored field            |            |          |            |
+
+### Iterative (Three or More Nested Loops, Harder)
+
+| Number | Name                                     | Created    | Status   | Changed    |
+|:------:|------------------------------------------|:----------:|----------|:----------:|
+| 10660  | Citizen attention offices                |            |          |            |
+| 11236  | Grocery store                            |            |          |            |
+| 11565  | Simple Equations                         |            |          |            |
+
+### Iterative (Fancy Techniques)
+
+| Number | Name                                     | Created    | Status   | Changed    |
+|:------:|------------------------------------------|:----------:|----------|:----------:|
+| 01047  | Zones                                    |            |          |            |
+| 11553  | Grid Game                                |            |          |            |
+| 12455  | Bars                                     |            |          |            |
+
+### Recursive Backtracking (Easy)
+
+| Number | Name                                     | Created    | Status   | Changed    |
+|:------:|------------------------------------------|:----------:|----------|:----------:|
+| 00624  | CD                                       |            |          |            |
+| 10576  | Y2K Accounting Bug                       |            |          |            |
+| 11085  | Back to the 8-Queens                     |            |          |            |
+
+### Recursive Backtracking (Medium)
+
+| Number | Name                                     | Created    | Status   | Changed    |
+|:------:|------------------------------------------|:----------:|----------|:----------:|
+| 00524  | Prime Ring Problem                       |            |          |            |
+| 00574  | Sum It Up                                |            |          |            |
+| 10503  | The dominoes solitaire                   |            |          |            |
+
+### Recursive Backtracking (Harder)
+
+| Number | Name                                     | Created    | Status   | Changed    |
+|:------:|------------------------------------------|:----------:|----------|:----------:|
+| 00193  | Graph Coloring                           |            |          |            |
+| 00416  | LED Test                                 |            |          |            |
+| 01262  | Password                                 |            |          |            |
