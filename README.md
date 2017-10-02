@@ -226,7 +226,7 @@
 |:------:|------------------------------------------|:----------:|----------|:----------:|
 | 01260  | Sales                                    | 2017/10/01 | Accepted | 2017/10/01 |
 | 10487  | Closest Sums                             | 2017/10/01 | Accepted | 2017/10/01 |
-| 11242  | Tour de France                           |            |          |            |
+| 11242  | Tour de France                           | 2017/10/01 | Accepted | 2017/10/01 |
 
 ### Iterative (Three or More Nested Loops, Easier)
 
