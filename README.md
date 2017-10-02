@@ -217,7 +217,7 @@
 | Number | Name                                     | Created    | Status   | Changed    |
 |:------:|------------------------------------------|:----------:|----------|:----------:|
 | 00927  | Integer Sequences from Addition of Terms | 2017/09/30 | Accepted | 2017/09/30 |
-| 01237  | Expert Enough?                           |            |          |            |
+| 01237  | Expert Enough?                           | 2017/10/01 | Accepted | 2017/10/01 |
 | 10976  | Fractions Again?!                        |            |          |            |
 
 ### Iterative (Two Nested Loops)
