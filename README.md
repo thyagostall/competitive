@@ -241,7 +241,7 @@
 | Number | Name                                     | Created    | Status   | Changed    |
 |:------:|------------------------------------------|:----------:|----------|:----------:|
 | 10660  | Citizen attention offices                |            |          |            |
-| 11236  | Grocery store                            |            |          |            |
+| 11236  | Grocery store                            | 2017/10/05 | Accepted | 2017/10/05 |
 | 11565  | Simple Equations                         |            |          |            |
 
 ### Iterative (Fancy Techniques)
