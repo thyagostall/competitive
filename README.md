@@ -240,7 +240,7 @@
 
 | Number | Name                                     | Created    | Status   | Changed    |
 |:------:|------------------------------------------|:----------:|----------|:----------:|
-| 10660  | Citizen attention offices                |            |          |            |
+| 10660  | Citizen attention offices                | 2017/10/08 | Accepted | 2017/10/08 |
 | 11236  | Grocery store                            | 2017/10/05 | Accepted | 2017/10/05 |
 | 11565  | Simple Equations                         |            |          |            |
 
