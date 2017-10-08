@@ -234,7 +234,7 @@
 |:------:|------------------------------------------|:----------:|----------|:----------:|
 | 00441  | Lotto                                    | 2017/10/05 | Accepted | 2017/10/05 |
 | 00735  | Dart-a-Mania                             | 2017/10/05 | Accepted | 2017/10/07 |
-| 10102  | The path in the colored field            |            |          |            |
+| 10102  | The path in the colored field            | 2017/10/07 | Accepted | 2017/10/08 |
 
 ### Iterative (Three or More Nested Loops, Harder)
 
