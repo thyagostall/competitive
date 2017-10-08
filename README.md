@@ -242,7 +242,7 @@
 |:------:|------------------------------------------|:----------:|----------|:----------:|
 | 10660  | Citizen attention offices                | 2017/10/08 | Accepted | 2017/10/08 |
 | 11236  | Grocery store                            | 2017/10/05 | Accepted | 2017/10/05 |
-| 11565  | Simple Equations                         |            |          |            |
+| 11565  | Simple Equations                         | 2017/10/08 | Accepted | 2017/10/08 |
 
 ### Iterative (Fancy Techniques)
 
