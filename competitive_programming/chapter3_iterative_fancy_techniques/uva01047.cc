@@ -1,5 +1,5 @@
 #include <iostream>
-#include <bitset>
+#include <map>
 
 #define MAX 1048577
 
@@ -17,15 +17,10 @@ int count_bits(int i)
 
 int sum_sets(int value[MAX], int mask)
 {
-    int count, result = 0;
-    for (int i = 1; i <= mask; i++) {
-        count = count_bits(i);
-        if ((i & mask) == i) {
-            if (count % 2) {
-                result += value[i];
-            } else {
-                result -= value[i];
-            }
+    int result = 0;
+    for (int i = 1; i <= mask; i <<= 1) {
+        if (mask & i) {
+            result += value[i];
         }
     }
     return result;
@@ -50,10 +45,22 @@ string calc_subsets(int mask)
     return result;
 }
 
+int sum_intersections(map<int, int> &intersections, int mask)
+{
+    int count, result = 0;
+    for (auto &intersection : intersections) {
+        count = count_bits(intersection.first & mask);
+        if (intersection.second && count > 1) {
+            result += (count - 1) * intersection.second;
+        }
+    }
+    return result;
+}
+
 int main()
 {
     int total, installed, quantity, test_case, max_value, max_subset,
-        intersections, intersection, intersection_value, current,
+        intersection_qty, intersection, intersection_value, current,
         temp;
     int towers[MAX];
 
@@ -66,8 +73,9 @@ int main()
         for (int i = 0; i < total; i++) {
             cin >> towers[1 << i];
         }
-        cin >> intersections;
-        while (intersections--) {
+        cin >> intersection_qty;
+        map<int, int> intersections;
+        while (intersection_qty--) {
             cin >> quantity;
             intersection = 0;
             while (quantity--) {
@@ -75,16 +83,29 @@ int main()
                 intersection |= (1 << temp - 1);
             }
             cin >> intersection_value;
-            towers[intersection] += intersection_value;
+            intersections[intersection] += intersection_value;
         }
 
         max_subset = max_value = 0;
         for (int i = 1; i <= (1 << total); i++) {
-            if (count_bits(i) != installed) 
+            if (count_bits(i) != installed)
                 continue;
 
-            current = sum_sets(towers, i);
-            if (current > max_value) {
+            current = sum_sets(towers, i) - sum_intersections(intersections, i);
+            if (current == max_value) {
+                for (int j = 0; j < total; j++) {
+                    int current_bit = i & (1 << j);
+                    int max_bit = max_subset & (1 << j);
+
+                    if (current_bit != max_bit) {
+                        if (current_bit > 0) {
+                            max_value = current;
+                            max_subset = i;
+                        }
+                        break;
+                    }
+                }
+            } else if (current > max_value) {
                 max_value = current;
                 max_subset = i;
             }
