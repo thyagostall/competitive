@@ -249,7 +249,7 @@
 | Number | Name                                     | Created    | Status   | Changed    |
 |:------:|------------------------------------------|:----------:|----------|:----------:|
 | 01047  | Zones                                    | 2017/10/08 | Accepted | 2017/10/09 |
-| 11553  | Grid Game                                |            |          |            |
+| 11553  | Grid Game                                | 2017/10/19 | Accepted | 2017/10/19 |
 | 12455  | Bars                                     |            |          |            |
 
 ### Recursive Backtracking (Easy)
