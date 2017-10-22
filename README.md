@@ -264,7 +264,7 @@
 
 | Number | Name                                     | Created    | Status   | Changed    |
 |:------:|------------------------------------------|:----------:|----------|:----------:|
-| 00524  | Prime Ring Problem                       |            |          |            |
+| 00524  | Prime Ring Problem                       | 2017/10/22 | Accepted | 2017/10/22 |
 | 00574  | Sum It Up                                |            |          |            |
 | 10503  | The dominoes solitaire                   |            |          |            |
 
