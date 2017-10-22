@@ -257,7 +257,7 @@
 | Number | Name                                     | Created    | Status   | Changed    |
 |:------:|------------------------------------------|:----------:|----------|:----------:|
 | 00624  | CD                                       | 2017/10/21 | Accepted | 2017/10/21 |
-| 10576  | Y2K Accounting Bug                       |            |          |            |
+| 10576  | Y2K Accounting Bug                       | 2017/10/21 | Accepted | 2017/10/21 |
 | 11085  | Back to the 8-Queens                     |            |          |            |
 
 ### Recursive Backtracking (Medium)
