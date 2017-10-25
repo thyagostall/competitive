@@ -265,7 +265,7 @@
 | Number | Name                                     | Created    | Status   | Changed    |
 |:------:|------------------------------------------|:----------:|----------|:----------:|
 | 00524  | Prime Ring Problem                       | 2017/10/22 | Accepted | 2017/10/22 |
-| 00574  | Sum It Up                                |            |          |            |
+| 00574  | Sum It Up                                | 2017/10/25 | Accepted | 2017/10/25 |
 | 10503  | The dominoes solitaire                   |            |          |            |
 
 ### Recursive Backtracking (Harder)
