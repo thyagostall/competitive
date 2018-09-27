@@ -266,7 +266,7 @@
 |:------:|------------------------------------------|:----------:|----------|:----------:|
 | 00524  | Prime Ring Problem                       | 2017/10/22 | Accepted | 2017/10/22 |
 | 00574  | Sum It Up                                | 2017/10/25 | Accepted | 2017/10/25 |
-| 10503  | The dominoes solitaire                   |            |          |            |
+| 10503  | The dominoes solitaire                   | 2018/09/27 | Accepted | 2018/09/27 |
 
 ### Recursive Backtracking (Harder)
 
