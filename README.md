@@ -272,6 +272,6 @@
 
 | Number | Name                                     | Created    | Status   | Changed    |
 |:------:|------------------------------------------|:----------:|----------|:----------:|
-| 00193  | Graph Coloring                           |            |          |            |
+| 00193  | Graph Coloring                           | 2018/09/27 | Accepted | 2018/09/27 |
 | 00416  | LED Test                                 |            |          |            |
 | 01262  | Password                                 |            |          |            |
