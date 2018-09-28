@@ -280,6 +280,6 @@
 
 | Number | Name                                     | Created    | Status   | Changed    |
 |:------:|------------------------------------------|:----------:|----------|:----------:|
-| 11264  | Coin Collector                           |            |          |            |
+| 11264  | Coin Collector                           | 2018/09/28 | Accepted | 2018/09/28 |
 | 11389  | The Bus Driver Problem                   |            |          |            |
 | 12405  | Scarecrow                                |            |          |            |
