@@ -268,10 +268,18 @@
 | 00574  | Sum It Up                                | 2017/10/25 | Accepted | 2017/10/25 |
 | 10503  | The dominoes solitaire                   | 2018/09/27 | Accepted | 2018/09/27 |
 
-### Recursive Backtracking (Harder)
+### Recursive Backtracking (Hard)
 
 | Number | Name                                     | Created    | Status   | Changed    |
 |:------:|------------------------------------------|:----------:|----------|:----------:|
 | 00193  | Graph Coloring                           | 2018/09/27 | Accepted | 2018/09/27 |
 | 00416  | LED Test                                 |            |          |            |
 | 01262  | Password                                 |            |          |            |
+
+### Greedy - Classical (Easy)
+
+| Number | Name                                     | Created    | Status   | Changed    |
+|:------:|------------------------------------------|:----------:|----------|:----------:|
+| 11264  | Coin Collector                           |            |          |            |
+| 11389  | The Bus Driver Problem                   |            |          |            |
+| 12405  | Scarecrow                                |            |          |            |
