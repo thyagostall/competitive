@@ -283,3 +283,11 @@
 | 11264  | Coin Collector                           | 2018/09/28 | Accepted | 2018/09/28 |
 | 11389  | The Bus Driver Problem                   | 2018/09/28 | Accepted | 2018/09/28 |
 | 12405  | Scarecrow                                | 2018/09/28 | Accepted | 2018/09/28 |
+
+### Greedy - Involving sorting
+
+| Number | Name                                     | Created    | Status   | Changed    |
+|:------:|------------------------------------------|:----------:|----------|:----------:|
+| 11100  | The Trip, 2007                           | 2018/09/29 | Accepted | 2018/09/29 |
+| 11292  | Dragon of Loowater                       |            |          |            |
+| 12210  | A Match Making Problem                   |            |          |            |
