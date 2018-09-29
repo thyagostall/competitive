@@ -281,7 +281,7 @@
 | Number | Name                                     | Created    | Status   | Changed    |
 |:------:|------------------------------------------|:----------:|----------|:----------:|
 | 10567  | Helping Fill Bates                       |            |          |            |
-| 11057  | Exact Sum                                |            |          |            |
+| 11057  | Exact Sum                                | 2018/09/29 | Accepted | 2018/09/29 |
 | 12192  | Grapevine                                |            |          |            |
 
 ### Divide and Conquer - Binary Search the Answer
