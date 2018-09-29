@@ -291,3 +291,11 @@
 | 11100  | The Trip, 2007                           | 2018/09/29 | Accepted | 2018/09/29 |
 | 11292  | Dragon of Loowater                       | 2018/09/29 | Accepted | 2018/09/29 |
 | 12210  | A Match Making Problem                   |            |          |            |
+
+### Greedy - Non Classical
+
+| Number | Name                                     | Created    | Status   | Changed    |
+|:------:|------------------------------------------|:----------:|----------|:----------:|
+| 10656  | Maximum Sum (II)                         | 2018/09/29 | Accepted | 2018/09/29 |
+| 10718  | Bit Mask                                 |            |          |            |
+| 11157  | Dynamic Frog                             |            |          |            |
