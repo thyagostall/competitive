@@ -276,6 +276,28 @@
 | 00416  | LED Test                                 |            |          |            |
 | 01262  | Password                                 |            |          |            |
 
+### Divide and Conquer - Binary Search
+
+| Number | Name                                     | Created    | Status   | Changed    |
+|:------:|------------------------------------------|:----------:|----------|:----------:|
+| 10567  | Helping Fill Bates                       |            |          |            |
+| 11057  | Exact Sum                                |            |          |            |
+| 12192  | Grapevine                                |            |          |            |
+
+### Divide and Conquer - Binary Search the Answer
+
+| Number | Name                                     | Created    | Status   | Changed    |
+|:------:|------------------------------------------|:----------:|----------|:----------:|
+| 10341  | Solve It                                 |            |          |            |
+| 11413  | Fill the Containers                      |            |          |            |
+| 12032  | The Monkey and the Oiled Bamboo          |            |          |            |
+
+### Divide and Conquer - Other
+
+| Number | Name                                     | Created    | Status   | Changed    |
+|:------:|------------------------------------------|:----------:|----------|:----------:|
+| 00183  | Bit Maps                                 |            |          |            |
+
 ### Greedy - Classical (Easy)
 
 | Number | Name                                     | Created    | Status   | Changed    |
@@ -299,3 +321,4 @@
 | 10656  | Maximum Sum (II)                         | 2018/09/29 | Accepted | 2018/09/29 |
 | 10718  | Bit Mask                                 |            |          |            |
 | 11157  | Dynamic Frog                             |            |          |            |
+
