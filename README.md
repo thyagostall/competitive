@@ -289,5 +289,5 @@
 | Number | Name                                     | Created    | Status   | Changed    |
 |:------:|------------------------------------------|:----------:|----------|:----------:|
 | 11100  | The Trip, 2007                           | 2018/09/29 | Accepted | 2018/09/29 |
-| 11292  | Dragon of Loowater                       |            |          |            |
+| 11292  | Dragon of Loowater                       | 2018/09/29 | Accepted | 2018/09/29 |
 | 12210  | A Match Making Problem                   |            |          |            |
