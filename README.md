@@ -288,7 +288,7 @@
 
 | Number | Name                                     | Created    | Status   | Changed    |
 |:------:|------------------------------------------|:----------:|----------|:----------:|
-| 10341  | Solve It                                 |            |          |            |
+| 10341  | Solve It                                 | 2018/09/29 | Accepted | 2018/09/29 |
 | 11413  | Fill the Containers                      |            |          |            |
 | 12032  | The Monkey and the Oiled Bamboo          |            |          |            |
 
