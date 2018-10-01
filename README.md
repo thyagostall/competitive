@@ -322,3 +322,58 @@
 | 10718  | Bit Mask                                 |            |          |            |
 | 11157  | Dynamic Frog                             |            |          |            |
 
+### Max 1D Range Sum
+
+| Number | Name                                     | Created    | Status   | Changed    |
+|:------:|------------------------------------------|:----------:|----------|:----------:|
+| 00787  | Maximum Sub-sequence Product             |            |          |            |
+| 10684  | The jackpot                              |            |          |            |
+| 10755  | Garbage Heap                             |            |          |            |
+
+### Max 2D Range Sum
+
+| Number | Name                                     | Created    | Status   | Changed    |
+|:------:|------------------------------------------|:----------:|----------|:----------:|
+| 00108  | Maximum Sum                              |            |          |            |
+| 10827  | Maximum sum on a torus                   |            |          |            |
+| 11951  | Area                                     |            |          |            |
+
+### Longest Increasing Subsequence (LIS)
+
+| Number | Name                                     | Created    | Status   | Changed    |
+|:------:|------------------------------------------|:----------:|----------|:----------:|
+| 00481  | What Goes Up                             |            |          |            |
+| 11456  | Trainsorting                             |            |          |            |
+| 11790  | Murcia's Skyline                         |            |          |            |
+
+### 0-1 Knapsack (Subset Sum)
+
+| Number | Name                                     | Created    | Status   | Changed    |
+|:------:|------------------------------------------|:----------:|----------|:----------:|
+| 10616  | Divisible Group Sums                     |            |          |            |
+| 10819  | Trouble of 13-Dots                       |            |          |            |
+| 11566  | Let's Yum Cha!                           |            |          |            |
+
+### Coin Change (CC)
+
+| Number | Name                                     | Created    | Status   | Changed    |
+|:------:|------------------------------------------|:----------:|----------|:----------:|
+| 00357  | Let Me Count The Ways                    |            |          |            |
+| 10306  | e-Coins                                  |            |          |            |
+| 11517  | Exact Change                             |            |          |            |
+
+### Traveling Salesman Problem (TSP)
+
+| Number | Name                                     | Created    | Status   | Changed    |
+|:------:|------------------------------------------|:----------:|----------|:----------:|
+| 00216  | Getting in Line                          |            |          |            | 
+| 10496  | Collecting Beepers                       |            |          |            |
+| 11284  | Shopping Trip                            |            |          |            |
+
+### Non Classical (The Easier Ones)
+
+| Number | Name                                     | Created    | Status   | Changed    |
+|:------:|------------------------------------------|:----------:|----------|:----------:|
+| 10337  | Flight Planner                           |            |          |            |
+| 10721  | Bar Codes                                |            |          |            |
+| 10943  | How do you add?                          |            |          |            |
