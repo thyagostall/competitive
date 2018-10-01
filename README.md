@@ -327,7 +327,7 @@
 | Number | Name                                     | Created    | Status   | Changed    |
 |:------:|------------------------------------------|:----------:|----------|:----------:|
 | 00787  | Maximum Sub-sequence Product             |            |          |            |
-| 10684  | The jackpot                              |            |          |            |
+| 10684  | The jackpot                              | 2018/09/30 | Accepted | 2018/09/30 |
 | 10755  | Garbage Heap                             |            |          |            |
 
 ### Max 2D Range Sum
