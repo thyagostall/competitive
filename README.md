@@ -334,7 +334,7 @@
 
 | Number | Name                                     | Created    | Status   | Changed    |
 |:------:|------------------------------------------|:----------:|----------|:----------:|
-| 00108  | Maximum Sum                              |            |          |            |
+| 00108  | Maximum Sum                              | 2018/10/01 | Accepted | 2018/10/01 |
 | 10827  | Maximum sum on a torus                   |            |          |            |
 | 11951  | Area                                     |            |          |            |
 
