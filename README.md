@@ -342,7 +342,7 @@
 
 | Number | Name                                     | Created    | Status   | Changed    |
 |:------:|------------------------------------------|:----------:|----------|:----------:|
-| 00481  | What Goes Up                             | 2018/10/02 | Ready    | 2018/10/02 |
+| 00481  | What Goes Up                             | 2018/10/02 | Accepted | 2018/10/02 |
 | 11456  | Trainsorting                             |            |          |            |
 | 11790  | Murcia's Skyline                         |            |          |            |
 
