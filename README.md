@@ -358,7 +358,7 @@
 
 | Number | Name                                     | Created    | Status   | Changed    |
 |:------:|------------------------------------------|:----------:|----------|:----------:|
-| 00357  | Let Me Count The Ways                    |            |          |            |
+| 00357  | Let Me Count The Ways                    | 2018/10/03 | Accepted | 2018/10/03 |
 | 10306  | e-Coins                                  |            |          |            |
 | 11517  | Exact Change                             |            |          |            |
 
